@@ -2,10 +2,10 @@
 
 Welcome to **KaziHaven** – the ultimate job portal that connects job seekers with potential employers seamlessly. Whether you're looking for your dream job or seeking top talent, CareerHub has got you covered! 🎯🚀
 
-## 🌍 Live Demo
+## 🌍[Live Demo](https://kazi-haven.vercel.app/)
 The project is fully deployed and accessible online:
 - **Frontend:** [Live on Vercel](https://kazi-haven.vercel.app/)
-- **Backend:** [Live on Render](#)
+- **Backend:** [Live on Render](https://kazi-haven-2.onrender.com)
 
 ---
 
