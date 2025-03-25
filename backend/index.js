@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://kazi-haven.vercel.app/",
+    origin: "https://kazi-haven.vercel.app",
     credentials: true,
   })
 );
