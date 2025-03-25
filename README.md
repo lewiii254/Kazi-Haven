@@ -1,10 +1,10 @@
-🌟 **CareerHub – Modern Job Portal**
+# 🌟 **Kazi Haven– Modern Job Portal**
 
-CareerHub is a modern job portal built using the MERN Stack (MongoDB, Express.js, React.js, Node.js). It allows job seekers to search and apply for jobs, manage their applications, and track their progress. Employers can post jobs, review applications, and manage job postings, providing a seamless hiring experience.
+Kazi Haven is a modern job portal built using the MERN Stack (MongoDB, Express.js, React.js, Node.js). It allows job seekers to search and apply for jobs, manage their applications, and track their progress. Employers can post jobs, review applications, and manage job postings, providing a seamless hiring experience.
 
 
 
-🚀 Features
+## 🚀 Features
 👩‍💼 For Job Seekers:
 
 ✅ Search for jobs based on filters (location, category, salary, etc.) 
@@ -16,7 +16,7 @@ CareerHub is a modern job portal built using the MERN Stack (MongoDB, Express.js
 ✅ User authentication (sign up, login)
 
 
-🏢 **For Employers:**
+## 🏢 **For Employers:**
 
 ✅ Post new job listings
 
@@ -27,7 +27,7 @@ CareerHub is a modern job portal built using the MERN Stack (MongoDB, Express.js
 ✅ Review applicant details and contact candidates
 
 
-🌐 **General:**
+## 🌐 **General:**
 
 ✅ Responsive and mobile-friendly design
 
@@ -42,36 +42,34 @@ CareerHub is a modern job portal built using the MERN Stack (MongoDB, Express.js
 
 **Home Page**
 
-<img width="1402" alt="image" src="https://github.com/user-attachments/assets/b599bee1-6aec-4f00-851c-f2ade3a32d6f" />
+
 
 
 **Job seeker can view and apply to jobs** 
 
-<img width="1340" alt="image" src="https://github.com/user-attachments/assets/6a9f95d5-9782-41a0-811c-cd0583a729a1" />
+
 
 
 **Job Seeker profile section with Applied job listings** 
 
-<img width="1333" alt="image" src="https://github.com/user-attachments/assets/541e8caa-1f0b-40a2-9b75-25d8103bbeae" />
 
 
 **Employer's Added Company Listings /Jobs**
 
-<img width="1269" alt="image" src="https://github.com/user-attachments/assets/9d4032a5-1f76-4271-b241-bd66dfc398a3" />
-
-<img width="1440" alt="image" src="https://github.com/user-attachments/assets/34346142-55e4-4fc7-9322-3330eee1e8f0" />
 
 
 
 
-Backend deployed url : https://careerhub-sw2b.onrender.com
 
 
-🚀 **Getting Started**
+Backend deployed url : 
+
+
+## 🚀 **Getting Started**
 
 **1. Clone the repository**
 
-git clone https://github.com/manjay6428/CareerHub.git
+git clone 
 cd CareerHub
 
 **2. Install dependencies**
