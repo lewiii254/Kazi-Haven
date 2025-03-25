@@ -15,7 +15,7 @@ Follow these steps to set up and run CareerHub locally.
 ### 1️⃣ Clone the Repository
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/CareerHub.git
+git clone https://github.com/lewiii254/Kazi-Haven.git
 cd CareerHub
 ```
 
