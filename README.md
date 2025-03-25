@@ -4,8 +4,8 @@ Welcome to **KaziHaven** – the ultimate job portal that connects job seekers w
 
 ## 🌍 Live Demo
 The project is fully deployed and accessible online:
-- **Frontend:** [Live on Vercel](#) (Replace with actual URL)
-- **Backend:** [Live on Render](#) (Replace with actual URL)
+- **Frontend:** [Live on Vercel](https://kazi-haven.vercel.app/)
+- **Backend:** [Live on Render](#)
 
 ---
 
