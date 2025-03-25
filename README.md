@@ -1,4 +1,4 @@
-# Kazi-Haven 🚀🌐🔥
+# 🔗Kazi-Haven 🚀🌐🔥
 
 Welcome to **KaziHaven** – the ultimate job portal that connects job seekers with potential employers seamlessly. Whether you're looking for your dream job or seeking top talent, CareerHub has got you covered! 🎯🚀
 
@@ -37,6 +37,9 @@ Create a `.env` file inside the `backend` folder and add the following:
 ```env
 MONGO_URI=your-mongodb-connection-string
 JWT_SECRET=your-jwt-secret
+CLOUDINARY_CLOUD_NAME=your-cloudinary-cloud-name
+CLOUDINARY_API_KEY=your-cloudinary-api-key
+CLOUDINARY_API_SECRET=your-cloudinary-api-secret
 ```
 
 ### 4️⃣ Run the Project
@@ -94,6 +97,19 @@ Want to improve CareerHub? Contributions are always welcome! 🚀
 
 ## 📝 License
 This project is **open-source** and available under the [MIT License](LICENSE).
+
+---
+
+## 📅 Roadmap
+🔹 Upcoming Features:
+
+✅ Email notifications for job applications
+
+✅ Advanced filtering & sorting
+
+✅ User reviews & ratings
+
+✅ AI-powered job recommendations
 
 ---
 
