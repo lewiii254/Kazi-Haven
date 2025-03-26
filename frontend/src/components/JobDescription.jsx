@@ -150,7 +150,7 @@ const JobDescription = () => {
             Salary :
             <span className=" pl-4 font-normal text-gray-800">{`${
               singleJob?.salary
-            } ${singleJob?.salary > 100 ? "K/year" : "lpa"}`}</span>
+            } ${singleJob?.salary > 100 ? "Ksh/year" : "Ksh/month"}`}</span>
           </h1>
           <h1 className=" font-bold my-1">
             Total Applicants :

@@ -18,17 +18,17 @@ const HeroSection = () => {
     <div className=" text-center mt-6">
       <div className=" flex flex-col gap-5 my-10">
         <span className=" mx-auto px-4 py-2 rounded-full bg-gray-100 text-[#f83002] font-medium">
-        Launch Your Career with a Click – Let’s Get to Work!
+        🚀Launch Your Career with a Click – Let’s Get to Work!⚒
         </span>
         <h1 className=" text-5xl font-bold">
-          Discover , apply & <br />
+          Discover🔎 , apply🧾 & <br />
           Land your
-          <span className=" text-[#6a38c2]"> Dream Career</span>
+          <span className=" text-[#6a38c2]"> Dream Career👩‍🏫</span>
         </h1>
         <p>
-        Step into a world of opportunity, where top-tier roles in tech, healthcare, finance, and beyond await you. <br />
+        Step into a world of opportunity, where top-tier roles in tech💻, healthcare🩺, finance💹, and beyond await you. <br />
         Browse with ease, apply in a snap, and watch your professional dreams take flight. <br />
-        From <span className=" text-2xl">coding wizards to healthcare heroes</span>, your next big <span>Job/Gig</span> is here – dive in today!
+        From <span className=" text-2xl">coding wizards to healthcare heroes</span>, your next big <span>Job/Gig</span> is here – dive in today!🤞
         </p>
         <div className=" flex w-[40%] shadow-lg border border-gray-200 pl-3 rounded-full items-center gap-4 mx-auto">
           <input
