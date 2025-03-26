@@ -57,7 +57,7 @@ npm start
 ### 5️⃣ Access the App
 Open your browser and go to:
 ```plaintext
-http://localhost:8000
+http://localhost:5000
 ```
 🎉 Boom! Kazi-Haven is now up and running on your local machine. Start exploring! 🚀🔥
 
@@ -115,9 +115,9 @@ This project is **open-source** and available under the [MIT License](LICENSE).
 
 ## 🎯 Connect With Me
 💡 Have a question or suggestion? Let's connect!
-- 🔗 LinkedIn: [Your LinkedIn Profile](#)
-- 🐦 Twitter: [@yourhandle](#)
-- 🌐 Portfolio: [yourportfolio.com](#)
+- 🔗 [LinkedIn:](#)
+- 🐦 [Twitter:](#)
+- 🌐 [Portfolio:](#)
 
 🔥 **KaziHavem – Connecting Talent with Opportunity!** 🔥
 
