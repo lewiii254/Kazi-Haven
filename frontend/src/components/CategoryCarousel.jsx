@@ -17,6 +17,16 @@ const category = [
   "Data Science",
   "Graphic Designer",
   "Full Stack Developer",
+  "Mobile Developer",
+  "UI/UX Designer",
+  "Product Manager",
+  "Project Manager",
+  "QA/Tester",
+  "Marketing Manager",
+  "Sales Manager",
+  "Finance Manager",
+  "Teacher",
+  "Lecturer",
 ];
 const CategoryCarousel = () => {
   const dispatch = useDispatch();

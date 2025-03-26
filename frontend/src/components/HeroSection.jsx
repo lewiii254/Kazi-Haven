@@ -21,9 +21,9 @@ const HeroSection = () => {
         Launch Your Career with a Click – Let’s Get to Work!
         </span>
         <h1 className=" text-5xl font-bold">
-          Search , apply & <br />
-          Get your
-          <span className=" text-[#6a38c2]"> Dream Job</span>
+          Discover , apply & <br />
+          Land your
+          <span className=" text-[#6a38c2]"> Dream Career</span>
         </h1>
         <p>
         Step into a world of opportunity, where top-tier roles in tech, healthcare, finance, and beyond await you. <br />
