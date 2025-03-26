@@ -46,7 +46,7 @@ const Job = ({ job }) => {
           {job?.jobType || "regular"}
         </Badge>
         <Badge className={"text-[#7209b7] font-bold"} variant={"ghost"}>
-          {`${job?.salary} ${job?.salary > 100 ? "K/year" : "lpa"}`}
+          {`${job?.salary} ${job?.salary > 100 ? "Ksh/year" : "Ksh/month"}`}
         </Badge>
       </div>
       <div className=" flex items-center gap-4 mt-4">

@@ -35,7 +35,7 @@ const LatestJobCards = ({
           {jobType}
         </Badge>
         <Badge className={"text-[#7209b7] font-bold"} variant={"ghost"}>
-          {`${salary} ${salary > 100 ? "K/year" : "lpa"}`}
+          {`${salary} ${salary > 100 ? "Ksh/year" : "Ksh/month"}`}
         </Badge>
       </div>
     </div>

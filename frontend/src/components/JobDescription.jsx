@@ -101,7 +101,7 @@ const JobDescription = () => {
               </Badge>
               <Badge className={"text-[#7209b7] font-bold"} variant={"ghost"}>
                 {`${singleJob?.salary} ${
-                  singleJob?.salary > 100 ? "K/year" : "lpa"
+                  singleJob?.salary > 100 ? "Ksh/year" : "Ksh/month"
                 }`}
               </Badge>
             </div>
