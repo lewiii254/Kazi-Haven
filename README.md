@@ -111,6 +111,8 @@ This project is **open-source** and available under the [MIT License](LICENSE).
 
 ✅ AI-powered job recommendations
 
+✅ Responsiveness in all devices
+
 ---
 
 ## 🎯 Connect With Me
