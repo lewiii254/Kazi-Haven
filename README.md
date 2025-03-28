@@ -1,6 +1,6 @@
 # 🔗Kazi-Haven 🚀🌐🔥
 
-Welcome to **KaziHaven** – the ultimate job portal that connects job seekers with potential employers seamlessly. Whether you're looking for your dream job or seeking top talent, CareerHub has got you covered! 🎯🚀
+Welcome to **KaziHaven** – the ultimate job portal that connects job seekers with potential employers seamlessly. Whether you're looking for your dream job or seeking top talent, Kazi-Haven has got you covered! 🎯🚀
 
 ## 🌍[Live Demo](https://kazi-haven.vercel.app/)
 The project is fully deployed and accessible online:
@@ -21,13 +21,13 @@ You can use the following demo accounts to explore **Kazi Haven**. If you want t
 ---
 
 ## 🚀 Getting Started
-Follow these steps to set up and run CareerHub locally.
+Follow these steps to set up and run Kazi-Haven locally.
 
 ### 1️⃣ Clone the Repository
 ```bash
 # Clone the repo
 git clone https://github.com/lewiii254/Kazi-Haven.git
-cd CareerHub
+cd Kazi-Haven
 ```
 
 ### 2️⃣ Install Dependencies
@@ -97,7 +97,7 @@ http://localhost:5000
 ---
 
 ## 🤝 Contributing
-Want to improve CareerHub? Contributions are always welcome! 🚀
+Want to improve Kazi-Haven? Contributions are always welcome! 🚀
 1. Fork the repository 🍴
 2. Create a new branch: `git checkout -b feature-awesome`
 3. Commit your changes: `git commit -m 'Added an awesome feature'`
@@ -132,5 +132,5 @@ This project is **open-source** and available under the [MIT License](LICENSE).
 - 🐦 [Twitter:](#)
 - 🌐 [Portfolio:](#)
 
-🔥 **KaziHavem – Connecting Talent with Opportunity!** 🔥
+🔥 **KaziHaven – Connecting Talent with Opportunity!** 🔥
 
