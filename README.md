@@ -9,14 +9,14 @@ The project is fully deployed and accessible online:
 
 ## 🚀 Demo Accounts  
 
-Available for testing:  
+You can use the following demo accounts to explore **Kazi Haven**. If you want to experience the full functionality, feel free to register your own account!  
 
 | Role   | Email                         | Password  |
 |--------|-------------------------------|-----------|
 | Recruiter  | ngondimarklewis@gmail.com    | mark2006   |
-| Student | student@gmail.com               | mark2006   |
+| Student | student@gmail.com              | mark2006  |
 
-Use these credentials to explore the platform. Enjoy! 💼✨
+🔹 **Note:** Some features may be restricted to specific roles. Create an account to personalize your experience! 🚀  
 
 ---
 
