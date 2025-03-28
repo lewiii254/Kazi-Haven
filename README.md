@@ -134,3 +134,19 @@ This project is **open-source** and available under the [MIT License](LICENSE).
 
 🔥 **KaziHaven – Connecting Talent with Opportunity!** 🔥
 
+## 📸 Screenshots  
+
+Here are some screenshots of **Kazi Haven** in action:  
+
+### 🔹 Homepage  
+![Homepage](https://github.com/user-attachments/assets/7434677b-8e44-4266-9562-135be619ad28)  
+
+### 🔹 Dashboard  
+![Dashboard](URL_TO_DASHBOARD_SCREENSHOT)  
+
+### 🔹 Job Listing Page  
+![Job Listing](https://github.com/user-attachments/assets/34486e04-64d6-4c25-a0ab-c69aae47fb4e)  
+
+Feel free to explore the live platform and register your own account! 🚀✨  
+
+
