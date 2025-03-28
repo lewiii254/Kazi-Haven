@@ -7,6 +7,17 @@ The project is fully deployed and accessible online:
 - **Frontend:** [Live on Vercel](https://kazi-haven.vercel.app/)
 - **Backend:** [Live on Render](https://kazi-haven-2.onrender.com)
 
+## 🚀 Demo Accounts  
+
+Available for testing:  
+
+| Role   | Email                         | Password  |
+|--------|-------------------------------|-----------|
+| Recruiter  | ngondimarklewis@gmail.com    | mark2006   |
+| Student | student@gmail.com               | mark2006   |
+
+Use these credentials to explore the platform. Enjoy! 💼✨
+
 ---
 
 ## 🚀 Getting Started
