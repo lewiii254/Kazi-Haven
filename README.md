@@ -147,6 +147,24 @@ Here are some screenshots of **Kazi Haven** in action:
 ### 🔹 Job Listing Page  
 ![Job Listing](https://github.com/user-attachments/assets/34486e04-64d6-4c25-a0ab-c69aae47fb4e)  
 
+### 🔹 Browse Page
+![image](https://github.com/user-attachments/assets/1d37a940-4dea-4e9d-b901-72b2ee907987)
+
+### 🔹 SignUp Page
+![image](https://github.com/user-attachments/assets/a2a5e1e4-9686-4c2c-bc93-37315d8eec90)
+
+### 🔹 Profile Page
+![image](https://github.com/user-attachments/assets/659b021d-623a-47a5-a8fc-7aeb6a739ed4)
+
+### 🔹 Companies Page
+![image](https://github.com/user-attachments/assets/ab5c0ad6-0948-40c4-93e3-5d0a590417aa)
+
+### 🔹 Jobs Page
+![image](https://github.com/user-attachments/assets/a47dfa04-7200-4a24-8609-d4ebb9c4314c)
+
+
+
+
 Feel free to explore the live platform and register your own account! 🚀✨  
 
 
