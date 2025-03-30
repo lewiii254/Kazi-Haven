@@ -130,7 +130,7 @@ This project is **open-source** and available under the [MIT License](LICENSE).
 💡 Have a question or suggestion? Let's connect!
 - 🔗 [LinkedIn:](#)
 - 🐦 [Twitter:](https://x.com/LewiiiTheG)
-- 🌐 [Portfolio:](#)
+- 🌐 [Portfolio:](https://lewiii254.github.io/Portfolio/)
 
 🔥 **KaziHaven – Connecting Talent with Opportunity!** 🔥
 
