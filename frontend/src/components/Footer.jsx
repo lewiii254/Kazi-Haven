@@ -39,10 +39,10 @@ const Footer = () => {
           <h3 className="font-semibold text-gray-800 dark:text-white mb-2">Follow Us</h3>
           <div className="flex gap-4 mt-2">
             <a href="https://marklewis-verse-folio.vercel.app/" className="hover:text-blue-500 text-gray-600 dark:text-gray-400"><Globe size={20} /></a>
-            <a href="mailto:info@kazihaven.com" className="hover:text-red-500 text-gray-600 dark:text-gray-400"><Mail size={20} /></a>
+            <a href="mailto:ngondimarklewis@gmail.com" className="hover:text-red-500 text-gray-600 dark:text-gray-400"><Mail size={20} /></a>
             <a href="https://x.com/LewiiiTheG" className="hover:text-blue-400 text-gray-600 dark:text-gray-400"><Twitter size={20} /></a>
             <a href="#" className="hover:text-blue-700 text-gray-600 dark:text-gray-400"><Linkedin size={20} /></a>
-            <a href="#" className="hover:text-black dark:hover:text-white text-gray-600 dark:text-gray-400"><Github size={20} /></a>
+            <a href="https://github.com/lewiii254" className="hover:text-black dark:hover:text-white text-gray-600 dark:text-gray-400"><Github size={20} /></a>
           </div>
         </div>
       </div>
