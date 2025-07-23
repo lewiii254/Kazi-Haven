@@ -93,8 +93,8 @@ const Login = () => {
       <Navbar />
 
       {/* Login Form */}
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="w-full max-w-md bg-white shadow-md rounded-2xl p-8">
+      <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 dark:text-white">
+        <div className="w-full max-w-md bg-white shadow-md rounded-2xl p-8 dark:bg-gray-800 dark:border-gray-700 dark:text-white">
           <h2 className="text-2xl font-bold text-center mb-6">
             Login to Your Account
           </h2>
@@ -135,7 +135,7 @@ const Login = () => {
               <Label>Role</Label>
               <div className="flex gap-4 mt-2">
                 {/* Student Role */}
-                <label className="flex items-center gap-2 cursor-pointer">
+                <label className="flex items-center gap-2 cursor-pointer dark:text-white">
                   <input
                     type="radio"
                     name="role"
@@ -144,20 +144,20 @@ const Login = () => {
                     onChange={handleChange}
                     className="h-4 w-4 text-[#6A38C2] border-gray-300 focus:ring-[#6A38C2]"
                   />
-                  <span className="text-gray-700">Student</span>
+                  <span className="text-gray-700 dark:text-white">Student</span>
                 </label>
 
                 {/* Recruiter Role */}
-                <label className="flex items-center gap-2 cursor-pointer">
+                <label className="flex items-center gap-2 cursor-pointer dark:text-white">
                   <input
                     type="radio"
                     name="role"
                     value="recruiter"
                     checked={formData.role === "recruiter"}
                     onChange={handleChange}
-                    className="h-4 w-4 text-[#6A38C2] border-gray-300 focus:ring-[#6A38C2]"
+                    className="h-4 w-4 text-[#6A38C2] border-gray-300 focus:ring-[#6A38C2] dark:text-white"
                   />
-                  <span className="text-gray-700">Recruiter</span>
+                  <span className="text-gray-700 dark:text-white">Recruiter</span>
                 </label>
               </div>
               {errors.role && (
@@ -184,16 +184,16 @@ const Login = () => {
           <p className="text-center text-gray-600 text-sm mt-4">
             <a
               href="/forgot-password"
-              className="text-[#6A38C2] hover:underline"
+              className="text-[#6A38C2] hover:underline dark:text-yellow-400"
             >
               Forgot Password?
             </a>
           </p>
 
           {/* Don't have an account */}
-          <p className="text-center text-gray-600 text-sm mt-4">
+          <p className="text-center text-gray-600 text-sm mt-4 dark:text-gray-200">
             Don't have an account?{" "}
-            <a href="/signup" className="text-[#6A38C2] hover:underline">
+            <a href="/signup" className="text-[#6A38C2] hover:underline dark:text-yellow-400">
               Sign up
             </a>
           </p>

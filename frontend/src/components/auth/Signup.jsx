@@ -121,8 +121,8 @@ const Signup = () => {
   return (
     <>
       <Navbar />
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="w-full max-w-[40rem] bg-white shadow-md rounded-2xl p-8">
+      <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 dark:text-white">
+        <div className="w-full max-w-[40rem] bg-white shadow-md rounded-2xl p-8 dark:bg-gray-800 dark:border-gray-700 dark:text-white">
           <h2 className="text-2xl font-bold text-center mb-6">
             Create an Account
           </h2>
@@ -203,7 +203,7 @@ const Signup = () => {
                     onChange={handleChange}
                     className="h-4 w-4 text-[#6A38C2] border-gray-300 focus:ring-[#6A38C2]"
                   />
-                  <span className="text-gray-700">Student</span>
+                  <span className="text-gray-700 dark:text-white">Student</span>
                 </label>
 
                 {/* Recruiter Role */}
@@ -216,13 +216,13 @@ const Signup = () => {
                     onChange={handleChange}
                     className="h-4 w-4 text-[#6A38C2] border-gray-300 focus:ring-[#6A38C2]"
                   />
-                  <span className="text-gray-700">Recruiter</span>
+                  <span className="text-gray-700 dark:text-white">Recruiter</span>
                 </label>
               </div>
               <div className="flex flex-col gap-2">
                 {/* File Upload */}
-                <Label htmlFor="profile" className="text-gray-700">
-                  Profile
+                <Label htmlFor="profile" className="text-gray-700 dark:text-white">
+                 Select Profile Photo
                 </Label>
                 <Input
                   id="profile"
@@ -273,9 +273,9 @@ const Signup = () => {
           </form>
 
           {/* Already have an account */}
-          <p className="text-center text-gray-600 text-sm mt-4">
+          <p className="text-center text-gray-600 text-sm mt-4 dark:text-gray-200">
             Already have an account?{" "}
-            <a href="/login" className="text-[#6A38C2] hover:underline">
+            <a href="/login" className="text-[#6A38C2] hover:underline dark:text-yellow-400">
               Login
             </a>
           </p>
