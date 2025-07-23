@@ -10,6 +10,7 @@ import { toast } from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 import { setLoading, setUser } from "@/redux/authSlice";
 import { Loader2 } from "lucide-react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -22,6 +23,8 @@ const Login = () => {
   const dispatch = useDispatch();
 
   const [errors, setErrors] = useState({});
+  const [showPassword, setShowPassword] = useState(false);
+
 
   // Handle form input change
   const handleChange = (e) => {
@@ -118,18 +121,26 @@ const Login = () => {
             {/* Password */}
             <div>
               <Label className={"mb-2"}>Password</Label>
-              <Input
-                type="password"
-                name="password"
-                value={formData.password}
-                onChange={handleChange}
-                placeholder="••••••••"
-              />
+              <div className="relative">
+                <Input
+                  type={showPassword ? "text" : "password"}
+                  name="password"
+                  value={formData.password}
+                  onChange={handleChange}
+                  placeholder="••••••••"
+                  className="pr-10"
+                />
+                <span
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-3 top-2.5 cursor-pointer text-gray-500"
+                >
+                  {showPassword ? <FaEyeSlash /> : <FaEye />}
+                </span>
+              </div>
               {errors.password && (
                 <p className="text-red-500 text-sm mt-1">{errors.password}</p>
               )}
             </div>
-
             {/* Role (Radio Buttons) */}
             <div>
               <Label>Role</Label>
