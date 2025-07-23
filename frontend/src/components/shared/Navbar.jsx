@@ -9,6 +9,7 @@ import axios from "axios";
 import { getInitialName, USER_BASE_URL } from "@/utils/constant";
 import { setLoading, setUser } from "@/redux/authSlice";
 import { toast } from "sonner";
+import ThemeToggle from '@/components/ThemeToggle';
 
 const Navbar = () => {
   const { user } = useSelector((state) => state.auth);
@@ -62,6 +63,7 @@ const Navbar = () => {
               </>
             ) : (
               <>
+                 <ThemeToggle />
                 <li className="hover:text-[#f83002] transition-colors duration-300 cursor-pointer">
                   <Link to={"/"}>Home</Link>
                 </li>
