@@ -10,12 +10,15 @@ import { getInitialName, USER_BASE_URL } from "@/utils/constant";
 import { setLoading, setUser } from "@/redux/authSlice";
 import { toast } from "sonner";
 import ThemeToggle from '@/components/ThemeToggle';
+import { useLocation } from "react-router-dom";
+
 
 const Navbar = () => {
   const { user } = useSelector((state) => state.auth);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleLogout = async () => {
     try {
@@ -64,13 +67,25 @@ const Navbar = () => {
             ) : (
               <>
                  <ThemeToggle />
-                <li className="hover:text-[#f83002] transition-colors duration-300 cursor-pointer dark:text-white">
+                  <li
+                    className={`transition-colors duration-300 cursor-pointer 
+                      hover:text-[#f83002] 
+                      ${location.pathname === "/" ? "text-purple-600 dark:text-purple-400 font-semibold" : "text-gray-700 dark:text-white"}`}
+                  >
                   <Link to={"/"}>Home</Link>
                 </li>
-                <li className="hover:text-[#f83002] transition-colors duration-300 cursor-pointer dark:text-white">
+                <li
+                      className={`transition-colors duration-300 cursor-pointer 
+                        hover:text-[#f83002] 
+                        ${location.pathname.startsWith("/jobs") ? "text-purple-600 dark:text-purple-400 font-semibold" : "text-gray-700 dark:text-white"}`}
+                    >
                   <Link to={"/jobs"}>Jobs</Link>
                 </li>
-                <li className="hover:text-[#f83002] transition-colors duration-300 cursor-pointer dark:text-white">
+                <li
+                    className={`transition-colors duration-300 cursor-pointer 
+                      hover:text-[#f83002] 
+                      ${location.pathname.startsWith("/browse") ? "text-purple-600 dark:text-purple-400 font-semibold" : "text-gray-700 dark:text-white"}`}
+                  >
                   <Link to={"/browse"}>Browse</Link>
                 </li>
               </>

@@ -70,7 +70,7 @@ const ProfileUpdateDialog = ({ isOpen, setOpen }) => {
     }
   };
   return (
-    <div>
+    <div className="dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:shadow-lg">
       <Dialog open={isOpen} setOpen={setOpen}>
         <DialogContent
           className="sm:max-w-[425px]"
