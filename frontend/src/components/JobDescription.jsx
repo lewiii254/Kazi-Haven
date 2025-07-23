@@ -80,7 +80,7 @@ const JobDescription = () => {
   return (
     <>
       <Navbar />
-      <div className=" max-w-7xl mx-auto my-10">
+      <div className=" max-w-7xl mx-auto my-10 dark:text-white">
         <Button
           className={"cursor-pointer"}
           variant={"outline"}
