@@ -29,7 +29,7 @@ const FilterCard = () => {
     dispatch(setSearchedQuery(selectedValue));
   }, [selectedValue]);
   return (
-    <div className=" w-full bg-white p-3 rounded-md">
+    <div className=" w-full bg-white p-3 rounded-md dark:bg-gray-900 dark:text-white">
       <h1 className=" font-bold text-lg">Filter jobs</h1>
       <hr className=" mt-3" />
       <RadioGroup value={selectedValue} onValueChange={changeHandler}>

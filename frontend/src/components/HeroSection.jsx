@@ -21,12 +21,12 @@ const HeroSection = () => {
         🚀Launch Your Career with a Click – Let’s Get to Work!⚒
         </span>
         <h1 className=" text-5xl font-bold">
-          Discover🔎 , apply🧾 & <br />
+          Discover , apply & <br />
           Land your
-          <span className=" text-[#6a38c2]"> Dream Career👩‍🏫</span>
+          <span className=" text-[#6a38c2]"> Dream Career </span>
         </h1>
         <p>
-        Step into a world of opportunity, where top-tier roles in tech💻, healthcare🩺, finance💹, and beyond await you. <br />
+        Step into a world of opportunity, where top-tier roles in technology, healthcare, finance and beyond await you. <br />
         Browse with ease, apply in a snap, and watch your professional dreams take flight. <br />
         From <span className=" text-2xl">coding wizards to healthcare heroes</span>, your next big <span>Job/Gig</span> is here – dive in today!🤞
         </p>

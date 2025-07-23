@@ -56,7 +56,7 @@ const AppliedJobsTable = ({ appliedJobs }) => {
             ))
           ) : (
             <TableRow>
-              <TableCell colSpan={4} className="text-center py-4 text-gray-500">
+              <TableCell colSpan={4} className="text-center py-4 text-gray-500 dark:text-white">
                 You haven't applied any job yet .
               </TableCell>
             </TableRow>

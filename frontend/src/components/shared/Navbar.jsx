@@ -35,7 +35,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white shadow-md sticky top-0 z-50">
+    <div className="bg-white shadow-md sticky top-0 z-50 dark:bg-gray-900 dark:text-white">
       <div className="flex items-center justify-between mx-auto max-w-7xl h-16 px-6">
         {/* Logo */}
         <Link to={"/"}>
@@ -64,13 +64,13 @@ const Navbar = () => {
             ) : (
               <>
                  <ThemeToggle />
-                <li className="hover:text-[#f83002] transition-colors duration-300 cursor-pointer">
+                <li className="hover:text-[#f83002] transition-colors duration-300 cursor-pointer dark:text-white">
                   <Link to={"/"}>Home</Link>
                 </li>
-                <li className="hover:text-[#f83002] transition-colors duration-300 cursor-pointer">
+                <li className="hover:text-[#f83002] transition-colors duration-300 cursor-pointer dark:text-white">
                   <Link to={"/jobs"}>Jobs</Link>
                 </li>
-                <li className="hover:text-[#f83002] transition-colors duration-300 cursor-pointer">
+                <li className="hover:text-[#f83002] transition-colors duration-300 cursor-pointer dark:text-white">
                   <Link to={"/browse"}>Browse</Link>
                 </li>
               </>
@@ -83,7 +83,7 @@ const Navbar = () => {
               <Link to={"/login"}>
                 <Button
                   variant={"outline"}
-                  className="border-gray-300 hover:border-gray-400 text-gray-700 cursor-pointer"
+                  className="border-gray-300 hover:border-gray-400 text-gray-700 cursor-pointer dark:text-white"
                 >
                   Login
                 </Button>
