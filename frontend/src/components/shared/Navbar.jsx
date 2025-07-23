@@ -193,12 +193,12 @@ const Navbar = () => {
 
          {/* Mobile Nav Menu */}
           {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-16 left-0 w-full bg-white dark:bg-gray-900 z-40 px-6 py-6 shadow-md">
+          <div className="lg:hidden absolute top-16 left-0 w-full bg-white dark:bg-gray-900 z-40 px-6 py-6 shadow-md text-center">
             <ul className="flex flex-col gap-4 font-medium text-gray-700 dark:text-white">
               <li className={`${location.pathname === "/" ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
                 <Link to={"/"}>Home</Link>
               </li>
-              <li className={`${location.pathname.startsWith("/jobs") ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
+              <li className={`${location.pathname.startsWith("/jobs") ? "text-purple-600 dark:text-purple-400 font-semibold " : ""}`}>
                 <Link to={"/jobs"}>Jobs</Link>
               </li>
               <li className={`${location.pathname.startsWith("/browse") ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
