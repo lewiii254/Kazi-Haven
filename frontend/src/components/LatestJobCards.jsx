@@ -16,7 +16,7 @@ const LatestJobCards = ({
   const navigate = useNavigate();
   return (
     <div
-      className=" p-5 rounded-md shadow-xl bg-white border border-gray-100 cursor-pointer"
+      className=" p-5 rounded-md shadow-xl bg-white border border-gray-100 cursor-pointer dark:bg-gray-800 dark:border-gray-700 dark:text-white"
       onClick={() => navigate(`/description/${id}`)}
     >
       <div>

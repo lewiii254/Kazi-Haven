@@ -17,13 +17,13 @@ const Browse = () => {
   return (
     <>
       <Navbar />
-      <div className=" max-w-7xl mx-auto my-10">
+      <div className=" max-w-7xl mx-auto my-10 dark:text-white">
         <div>
           <div className=" flex items-center gap-4">
             <div className=" flex items-center gap-5 p-8 ">
               <Button
                 className={
-                  " flex items-center gap-2 text-gray-500 font-semibold"
+                  " flex items-center gap-2 text-gray-500 font-semibold dark:text-white"
                 }
                 variant={"outline"}
                 type="button"

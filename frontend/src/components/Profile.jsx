@@ -21,7 +21,7 @@ const Profile = () => {
   return (
     <div>
       <Navbar />
-      <div className=" max-w-7xl mx-auto bg-white border border-gray-200 rounded-2xl my-5 p-8">
+      <div className=" max-w-7xl mx-auto bg-white border border-gray-200 rounded-2xl my-5 p-8 dark:bg-gray-800 dark:border-gray-700 dark:text-white">
         <div className=" flex items-center justify-between">
           <div className=" flex items-center gap-4 ">
             <Avatar className="h-20 w-20">

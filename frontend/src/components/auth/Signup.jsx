@@ -10,6 +10,7 @@ import { toast } from "sonner";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setLoading } from "@/redux/authSlice";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -25,6 +26,8 @@ const Signup = () => {
   const dispatch = useDispatch();
 
   const [errors, setErrors] = useState({});
+  const [showPassword, setShowPassword] = useState(false);
+
   const fileInputRef = useRef(null);
 
   // Handle form input change
@@ -121,8 +124,8 @@ const Signup = () => {
   return (
     <>
       <Navbar />
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="w-full max-w-[40rem] bg-white shadow-md rounded-2xl p-8">
+      <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 dark:text-white">
+        <div className="w-full max-w-[40rem] bg-white shadow-md rounded-2xl p-8 dark:bg-gray-800 dark:border-gray-700 dark:text-white">
           <h2 className="text-2xl font-bold text-center mb-6">
             Create an Account
           </h2>
@@ -177,18 +180,27 @@ const Signup = () => {
 
             {/* Password */}
             <div>
-              <Label className={"mb-2"}>Password</Label>
-              <Input
-                type="password"
-                name="password"
-                value={formData.password}
-                onChange={handleChange}
-                placeholder="••••••••"
-              />
-              {errors.password && (
-                <p className="text-red-500 text-sm mt-1">{errors.password}</p>
-              )}
-            </div>
+                <Label className={"mb-2"}>Password</Label>
+                <div className="relative">
+                  <Input
+                    type={showPassword ? "text" : "password"}
+                    name="password"
+                    value={formData.password}
+                    onChange={handleChange}
+                    placeholder="••••••••"
+                    className="pr-10"
+                  />
+                  <span
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute right-3 top-2.5 cursor-pointer text-gray-500"
+                  >
+                    {showPassword ? <FaEyeSlash /> : <FaEye />}
+                  </span>
+                </div>
+                {errors.password && (
+                  <p className="text-red-500 text-sm mt-1">{errors.password}</p>
+                )}
+              </div>
 
             {/* Role */}
             <div className=" flex items-center justify-between ">
@@ -203,7 +215,7 @@ const Signup = () => {
                     onChange={handleChange}
                     className="h-4 w-4 text-[#6A38C2] border-gray-300 focus:ring-[#6A38C2]"
                   />
-                  <span className="text-gray-700">Student</span>
+                  <span className="text-gray-700 dark:text-white">Student</span>
                 </label>
 
                 {/* Recruiter Role */}
@@ -216,13 +228,13 @@ const Signup = () => {
                     onChange={handleChange}
                     className="h-4 w-4 text-[#6A38C2] border-gray-300 focus:ring-[#6A38C2]"
                   />
-                  <span className="text-gray-700">Recruiter</span>
+                  <span className="text-gray-700 dark:text-white">Recruiter</span>
                 </label>
               </div>
               <div className="flex flex-col gap-2">
                 {/* File Upload */}
-                <Label htmlFor="profile" className="text-gray-700">
-                  Profile
+                <Label htmlFor="profile" className="text-gray-700 dark:text-white">
+                 Select Profile Photo
                 </Label>
                 <Input
                   id="profile"
@@ -273,9 +285,9 @@ const Signup = () => {
           </form>
 
           {/* Already have an account */}
-          <p className="text-center text-gray-600 text-sm mt-4">
+          <p className="text-center text-gray-600 text-sm mt-4 dark:text-gray-200">
             Already have an account?{" "}
-            <a href="/login" className="text-[#6A38C2] hover:underline">
+            <a href="/login" className="text-[#6A38C2] hover:underline dark:text-yellow-400">
               Login
             </a>
           </p>
