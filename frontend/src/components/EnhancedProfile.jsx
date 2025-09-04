@@ -371,10 +371,10 @@ const EnhancedProfile = () => {
             { key: 'github', label: 'GitHub', icon: Github },
             { key: 'portfolio', label: 'Portfolio', icon: Globe },
             { key: 'twitter', label: 'Twitter', icon: Twitter }
-          ].map(({ key, label, icon: IconComponent }) => (
+          ].map(({ key, label, icon: Icon }) => (
             <div key={key}>
               <Label htmlFor={key} className="flex items-center gap-2">
-                <IconComponent className="h-4 w-4" />
+                <Icon className="h-4 w-4" />
                 {label}
               </Label>
               {isEditing ? (
