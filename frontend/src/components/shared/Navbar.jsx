@@ -193,27 +193,58 @@ const Navbar = () => {
 
          {/* Mobile Nav Menu */}
           {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-16 left-0 w-full bg-white dark:bg-gray-900 z-40 px-6 py-6 shadow-md text-center">
+          <div className="lg:hidden absolute top-16 left-0 w-full bg-white dark:bg-gray-900 z-40 px-6 py-6 shadow-xl border-t dark:border-gray-700 text-center">
             <ul className="flex flex-col gap-4 font-medium text-gray-700 dark:text-white">
-              <li className={`${location.pathname === "/" ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
-                <Link to={"/"}>Home</Link>
-              </li>
-              <li className={`${location.pathname.startsWith("/jobs") ? "text-purple-600 dark:text-purple-400 font-semibold " : ""}`}>
-                <Link to={"/jobs"}>Jobs</Link>
-              </li>
-              <li className={`${location.pathname.startsWith("/browse") ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
-                <Link to={"/browse"}>Browse</Link>
-              </li>
+              {user && user.role === "recruiter" ? (
+                <>
+                  <li className={`py-2 ${location.pathname === "/admin/jobs" ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
+                    <Link to={"/admin/jobs"} onClick={() => setIsMobileMenuOpen(false)}>Jobs</Link>
+                  </li>
+                  <li className={`py-2 ${location.pathname === "/admin/companies" ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
+                    <Link to={"/admin/companies"} onClick={() => setIsMobileMenuOpen(false)}>Companies</Link>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li className={`py-2 ${location.pathname === "/" ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
+                    <Link to={"/"} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+                  </li>
+                  <li className={`py-2 ${location.pathname.startsWith("/jobs") ? "text-purple-600 dark:text-purple-400 font-semibold " : ""}`}>
+                    <Link to={"/jobs"} onClick={() => setIsMobileMenuOpen(false)}>Jobs</Link>
+                  </li>
+                  <li className={`py-2 ${location.pathname.startsWith("/browse") ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
+                    <Link to={"/browse"} onClick={() => setIsMobileMenuOpen(false)}>Browse</Link>
+                  </li>
+                  {user && (
+                    <li className={`py-2 ${location.pathname === "/profile" ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
+                      <Link to={"/profile"} onClick={() => setIsMobileMenuOpen(false)}>Profile</Link>
+                    </li>
+                  )}
+                </>
+              )}
             </ul>
 
-            {!user && (
+            {!user ? (
               <div className="flex flex-col gap-3 mt-6">
                 <Link to={"/login"}>
-                  <Button variant={"outline"} className="text-gray-700 dark:text-white w-full">Login</Button>
+                  <Button variant="outline" className="text-gray-700 dark:text-white w-full" onClick={() => setIsMobileMenuOpen(false)}>Login</Button>
                 </Link>
                 <Link to={"/signup"}>
-                  <Button className="bg-[#6A38C2] text-white hover:bg-[#5b30a6] w-full">Sign Up</Button>
+                  <Button className="bg-[#6A38C2] text-white hover:bg-[#5b30a6] w-full" onClick={() => setIsMobileMenuOpen(false)}>Sign Up</Button>
                 </Link>
+              </div>
+            ) : (
+              <div className="flex flex-col gap-3 mt-6">
+                <Button 
+                  variant="outline" 
+                  className="text-red-600 hover:text-red-700 hover:bg-red-50 dark:hover:bg-red-900/20 w-full" 
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    handleLogout();
+                  }}
+                >
+                  Logout
+                </Button>
               </div>
             )}
           </div>

@@ -1,0 +1,44 @@
+{
+  "name": "KaziHaven - Job Portal",
+  "short_name": "KaziHaven",
+  "description": "Your ultimate job portal that connects job seekers with potential employers seamlessly.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6a38c2",
+  "categories": ["business", "employment", "productivity"],
+  "lang": "en",
+  "dir": "ltr",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512x512.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Find Jobs",
+      "short_name": "Jobs",
+      "description": "Browse available job opportunities",
+      "url": "/jobs",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Browse Companies",
+      "short_name": "Browse",
+      "description": "Explore companies and their openings",
+      "url": "/browse",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ],
+  "prefer_related_applications": false
+}

@@ -3,12 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KaziHaven-JobPortal</title>
+    <meta name="description" content="KaziHaven - Your ultimate job portal that connects job seekers with potential employers seamlessly." />
+    <meta name="theme-color" content="#6a38c2" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="KaziHaven" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="KaziHaven - Job Portal" />
+    <meta property="og:description" content="Find your dream job with KaziHaven - connecting talent with opportunity" />
+    <meta property="og:url" content="https://kazi-haven.vercel.app/" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KaziHaven - Job Portal" />
+    <meta name="twitter:description" content="Find your dream job with KaziHaven - connecting talent with opportunity" />
+    
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <title>KaziHaven - Job Portal</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
   </body>
 </html>
