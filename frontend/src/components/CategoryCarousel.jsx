@@ -39,14 +39,14 @@ const CategoryCarousel = () => {
     navigate("/browse");
   };
   return (
-    <div>
-      <Carousel className={"w-full max-w-xl mx-auto my-5"}>
-        <CarouselContent>
+    <div className="px-4">
+      <Carousel className="w-full max-w-4xl mx-auto my-8">
+        <CarouselContent className="-ml-2 md:-ml-4">
           {category.map((cat, index) => (
-            <CarouselItem key={index} className={" md:basis-1/2 lg:basis-1/3"}>
+            <CarouselItem key={index} className="pl-2 md:pl-4 basis-auto">
               <Button
-                variant={"outline"}
-                className={"rounded-full"}
+                variant="outline"
+                className="rounded-full text-xs sm:text-sm whitespace-nowrap px-3 py-2 sm:px-4 sm:py-2 hover:bg-[#6a38c2] hover:text-white transition-colors duration-300"
                 onClick={() => searchJobHandler(cat)}
               >
                 {cat}
@@ -54,8 +54,8 @@ const CategoryCarousel = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="hidden sm:flex" />
+        <CarouselNext className="hidden sm:flex" />
       </Carousel>
     </div>
   );
