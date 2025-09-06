@@ -31,8 +31,12 @@ app.use(
 
 const PORT = process.env.PORT || 3000;
 
-// Initialize Redis connection
-redis.connect().catch(console.error);
+// Initialize Redis connection (optional for development)
+try {
+  await redis.connect();
+} catch (error) {
+  console.warn('Redis not available, running without caching:', error.message);
+}
 
 const connectToDB = async () => {
   try {
