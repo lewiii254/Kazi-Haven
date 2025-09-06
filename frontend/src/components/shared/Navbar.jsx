@@ -91,6 +91,20 @@ const Navbar = () => {
                   >
                   <Link to={"/browse"}>Browse</Link>
                 </li>
+                <li
+                    className={`transition-colors duration-300 cursor-pointer 
+                      hover:text-[#f83002] 
+                      ${location.pathname.startsWith("/ai/recommendations") ? "text-purple-600 dark:text-purple-400 font-semibold" : "text-gray-700 dark:text-white"}`}
+                  >
+                  <Link to={"/ai/recommendations"}>AI Jobs</Link>
+                </li>
+                <li
+                    className={`transition-colors duration-300 cursor-pointer 
+                      hover:text-[#f83002] 
+                      ${location.pathname.startsWith("/chat") ? "text-purple-600 dark:text-purple-400 font-semibold" : "text-gray-700 dark:text-white"}`}
+                  >
+                  <Link to={"/chat"}>Chat</Link>
+                </li>
               </>
             )}
           </ul>
@@ -151,12 +165,26 @@ const Navbar = () => {
                   {/* Actions */}
                   <div className="flex flex-col gap-2 text-gray-600">
                     {user && user.role !== "recruiter" && (
-                      <div className="flex items-center gap-2 hover:text-[#6A38C2] cursor-pointer">
-                        <User2 size={20} />
-                        <Button variant={"link"}>
-                          <Link to={"/profile"}>View Profile</Link>
-                        </Button>
-                      </div>
+                      <>
+                        <div className="flex items-center gap-2 hover:text-[#6A38C2] cursor-pointer">
+                          <User2 size={20} />
+                          <Button variant={"link"}>
+                            <Link to={"/profile"}>View Profile</Link>
+                          </Button>
+                        </div>
+                        <div className="flex items-center gap-2 hover:text-[#6A38C2] cursor-pointer">
+                          <User2 size={20} />
+                          <Button variant={"link"}>
+                            <Link to={"/profile/enhanced"}>Enhanced Profile</Link>
+                          </Button>
+                        </div>
+                        <div className="flex items-center gap-2 hover:text-[#6A38C2] cursor-pointer">
+                          <User2 size={20} />
+                          <Button variant={"link"}>
+                            <Link to={"/notifications"}>Notifications</Link>
+                          </Button>
+                        </div>
+                      </>
                     )}
 
                     <div
@@ -215,10 +243,21 @@ const Navbar = () => {
                   <li className={`py-2 ${location.pathname.startsWith("/browse") ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
                     <Link to={"/browse"} onClick={() => setIsMobileMenuOpen(false)}>Browse</Link>
                   </li>
+                  <li className={`py-2 ${location.pathname.startsWith("/ai/recommendations") ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
+                    <Link to={"/ai/recommendations"} onClick={() => setIsMobileMenuOpen(false)}>AI Jobs</Link>
+                  </li>
+                  <li className={`py-2 ${location.pathname.startsWith("/chat") ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
+                    <Link to={"/chat"} onClick={() => setIsMobileMenuOpen(false)}>Chat</Link>
+                  </li>
                   {user && (
-                    <li className={`py-2 ${location.pathname === "/profile" ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
-                      <Link to={"/profile"} onClick={() => setIsMobileMenuOpen(false)}>Profile</Link>
-                    </li>
+                    <>
+                      <li className={`py-2 ${location.pathname === "/profile" ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
+                        <Link to={"/profile"} onClick={() => setIsMobileMenuOpen(false)}>Profile</Link>
+                      </li>
+                      <li className={`py-2 ${location.pathname === "/notifications" ? "text-purple-600 dark:text-purple-400 font-semibold" : ""}`}>
+                        <Link to={"/notifications"} onClick={() => setIsMobileMenuOpen(false)}>Notifications</Link>
+                      </li>
+                    </>
                   )}
                 </>
               )}

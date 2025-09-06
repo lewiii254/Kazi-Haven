@@ -16,7 +16,7 @@ const NotificationCenter = () => {
   const [loading, setLoading] = useState(false);
   const [selectedType, setSelectedType] = useState('all');
   
-  const { user } = useSelector(store => store.auth);
+  const { user } = useSelector(state => state.auth);
 
   const fetchNotifications = useCallback(async () => {
     try {

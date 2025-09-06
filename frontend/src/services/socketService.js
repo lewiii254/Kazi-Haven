@@ -1,5 +1,5 @@
 import { io } from 'socket.io-client';
-import { store } from '../redux/store';
+import store from '../redux/store';
 
 class SocketService {
   constructor() {
