@@ -48,6 +48,26 @@ const appRouter = createBrowserRouter([
     path: "/profile",
     element: <Profile />,
   },
+  {
+    path: "/ai/recommendations",
+    element: <div className="p-8 text-center"><h1 className="text-2xl font-bold text-blue-600">🤖 AI Job Recommendations</h1><p className="mt-4 text-gray-600">Advanced AI-powered job matching system - Coming Soon!</p></div>,
+  },
+  {
+    path: "/chat", 
+    element: <div className="p-8 text-center"><h1 className="text-2xl font-bold text-green-600">💬 Real-time Chat System</h1><p className="mt-4 text-gray-600">WebSocket-powered instant messaging - Coming Soon!</p></div>,
+  },
+  {
+    path: "/interview/:sessionId",
+    element: <div className="p-8 text-center"><h1 className="text-2xl font-bold text-purple-600">🎥 Video Interview Platform</h1><p className="mt-4 text-gray-600">WebRTC-based video calling system - Coming Soon!</p></div>,
+  },
+  {
+    path: "/notifications",
+    element: <div className="p-8 text-center"><h1 className="text-2xl font-bold text-orange-600">🔔 Notification Center</h1><p className="mt-4 text-gray-600">Real-time notification system - Coming Soon!</p></div>,
+  },
+  {
+    path: "/analytics",
+    element: <div className="p-8 text-center"><h1 className="text-2xl font-bold text-red-600">📊 Analytics Dashboard</h1><p className="mt-4 text-gray-600">Advanced analytics and insights - Coming Soon!</p></div>,
+  },
   //admin routes
   {
     path: "/admin/companies",

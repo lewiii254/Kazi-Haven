@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 // Example component showing how the new Phase 2 features work together
 const Phase2IntegrationExample = () => {
   const analytics = useAnalytics();
-  const { user } = useSelector(store => store.auth);
+  const { user } = useSelector(state => state.auth);
 
   useEffect(() => {
     // Track page view when component mounts

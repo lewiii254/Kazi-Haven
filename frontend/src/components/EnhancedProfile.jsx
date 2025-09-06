@@ -25,7 +25,7 @@ import {
 import { useSelector } from "react-redux";
 
 const EnhancedProfile = () => {
-  const { user } = useSelector(store => store.auth);
+  const { user } = useSelector(state => state.auth);
   const [isEditing, setIsEditing] = useState(false);
   const [profile, setProfile] = useState({
     ...user?.profile,
